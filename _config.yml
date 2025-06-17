@@ -198,7 +198,7 @@ exclude:
   - CONTRIBUTING.md
   - _pages/blog.md
   - _pages/teaching.md
-  - _pages/people.md
+  - _pages/profiles.md
   - _pages/dropdown.md
   - CUSTOMIZE.md
   - Dockerfile
