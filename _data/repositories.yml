@@ -1,14 +1,14 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - chinmaychahar
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - chinmaychahar/bokeh-3.2
+  - chinmaychahar/ReThreads
+  - chinmaychahar/appwrite-sdk-generator
+  - chinmaychahar/NOISA
+  - chinmaychahar/SafeWeb
+  - chinmaychahar/PyNotion
+  - chinmaychahar/SnapSun
+  - chinmaychahar/OCR
