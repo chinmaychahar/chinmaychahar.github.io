@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Affiliations. Address. Contacts.
+subtitle: Cloud Consultant I @ Amazon Web Services
 
 profile:
   align: right
