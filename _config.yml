@@ -205,8 +205,8 @@ exclude:
   - _pages/teaching.md
   - _pages/profiles.md
   - _pages/dropdown.md
-  - _pages/projects.md
-  - _pages/cv.md
+  - _pages/projects.md #later
+  - _pages/cv.md # later
   - CUSTOMIZE.md
   - Dockerfile
   - docker-compose.yml
