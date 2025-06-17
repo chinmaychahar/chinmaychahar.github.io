@@ -7,10 +7,7 @@ subtitle: Cloud Consultant I @ Amazon Web Services
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>Your office/address details</p>
-    <p>City, State ZIP</p>
+  image_circular: true # crops the image to make it circular
 
 selected_papers: false # removing papers from front page
 social: true # keeping social icons 
