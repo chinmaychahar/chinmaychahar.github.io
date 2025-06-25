@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Cloud Consultant I @ Amazon Web Services
+subtitle: Software Engineer @ Coinbase
 
 profile:
   align: right
@@ -19,7 +19,7 @@ latest_posts:
   enabled: false # removing blog posts
 ---
 
-I work at Amazon Web Services (AWS), where I specialize in cloud infrastructure and platform engineering. 
+I am a software engineer at Coinbase. Previously, I worked at Amazon Web Services (AWS), where I specialized in cloud infrastructure and platform engineering. 
 My experience spans infrastructure as code, container orchestration, and cloud-native application development.
 
 I had the opportunity to work as a Machine Learning Intern at IIT Bombay in 2024. My research work, under the guidance of [Dr. Venkatapathy Subramanian](https://scholar.google.com/citations?user=GAMMJW8AAAAJ&hl=en), focused on developing 
