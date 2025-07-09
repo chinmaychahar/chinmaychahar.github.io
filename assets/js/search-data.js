@@ -402,21 +402,21 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+          section: "News",},{id: "projects-rethreads",
+          title: 'ReThreads',
+          description: "Platform for upcycling donated clothes into adaptive wear.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+              window.location.href = "/projects/1_rethreads/";
+            },},{id: "projects-noisa",
+          title: 'NOISA',
+          description: "Browser extension for people with vestibular disorders - No Invasive Site Animations.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+              window.location.href = "/projects/2_noisa/";
+            },},{id: "projects-safeweb",
+          title: 'SafeWeb',
+          description: "Chrome extension promoting the 20-20-20 rule for healthy computer usage.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
+              window.location.href = "/projects/3_safeweb/";
             },},{id: "projects-project-4",
           title: 'project 4',
           description: "another without an image",
