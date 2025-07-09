@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: A collection of hackathon projects and fun experiments.
 nav: true
 nav_order: 3
-display_categories: [work, fun]
+display_categories: [accessibility, tools]
 horizontal: false
 ---
 
