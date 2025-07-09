@@ -206,7 +206,6 @@ exclude:
   - _pages/teaching.md
   - _pages/profiles.md
   - _pages/dropdown.md
-  - _pages/projects.md #later
   - _pages/cv.md # later
   - CUSTOMIZE.md
   - Dockerfile
