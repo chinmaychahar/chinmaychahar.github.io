@@ -412,16 +412,16 @@ ninja.data = [{
           description: "Browser extension for people with vestibular disorders - No Invasive Site Animations.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_noisa/";
-            },},{id: "projects-safeweb",
-          title: 'SafeWeb',
-          description: "Chrome extension promoting the 20-20-20 rule for healthy computer usage.",
+            },},{id: "projects-project-3-with-very-long-name",
+          title: 'project 3 with very long name',
+          description: "a project that redirects to another website",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/3_safeweb/";
-            },},{id: "projects-imreader",
-          title: 'IMReader',
-          description: "Accessibility tool for processing images with OCR and text-to-speech.",
+              window.location.href = "/projects/3_project/";
+            },},{id: "projects-project-4",
+          title: 'project 4',
+          description: "another without an image",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/4_imread/";
+              window.location.href = "/projects/4_project/";
             },},{id: "projects-project-5",
           title: 'project 5',
           description: "a project with a background image",
