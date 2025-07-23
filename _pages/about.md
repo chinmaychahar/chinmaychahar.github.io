@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Software Development Engineer @ Amazon, Alexa AI
+subtitle: Software Engineer @ Amazon, Alexa AI
 
 profile:
   align: right
@@ -22,7 +22,7 @@ latest_posts:
 I work at Amazon Alexa AI, where I currently focus on Large Language Models (LLMs). Previously, I was a Cloud Consultant at Amazon Web Services (AWS), working in cloud infrastructure and platform engineering. At AWS, my experience spanned across infrastructure as code, container orchestration, and cloud-native application development.
 
 
-I had the opportunity to work as a Machine Learning Intern at IIT Bombay in 2024. My research work, under the guidance of [Dr. Venkatapathy Subramanian](https://scholar.google.com/citations?user=GAMMJW8AAAAJ&hl=en), focused on developing 
+I had the opportunity to work as a Machine Learning Intern at IIT Bombay in 2023. My research work, under the guidance of [Dr. Venkatapathy Subramanian](https://scholar.google.com/citations?user=GAMMJW8AAAAJ&hl=en), focused on developing 
 state-of-the-art OCR models and corresponding corpus pipelines for multiple Indian languages. I developed 
 word-level Machine Learning pipelines based on Transformer-based OCR models for six Indian languages. The work 
 involved extensive data analysis, collation and pre-processing of Indian preserved texts, with particular focus 
