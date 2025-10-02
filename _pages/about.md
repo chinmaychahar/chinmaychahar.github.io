@@ -19,7 +19,7 @@ latest_posts:
   enabled: false # removing blog posts
 ---
 
-I work at Amazon in the Alexa AI team, where I currently focus on developing Alexa+ capabilities based on LLMs and Java. Previously, I was a Cloud Consultant at Amazon Web Services (AWS), working in cloud infrastructure and platform engineering. At AWS, my experience spanned across infrastructure as code, container orchestration, and cloud-native application development.
+I work at Amazon in the Alexa AI team, where I focus on developing Natural Language Understanding (NLU) systems using Java, Python etc. Previously, I was a Cloud Consultant at Amazon Web Services (AWS), working in cloud infrastructure and platform engineering. At AWS, my experience spanned across infrastructure as code, container orchestration, and cloud-native application development.
 
 
 I had the opportunity to work as a Machine Learning Intern at IIT Bombay in 2023. My research work, under the guidance of [Dr. Venkatapathy Subramanian](https://scholar.google.com/citations?user=GAMMJW8AAAAJ&hl=en), focused on developing 
