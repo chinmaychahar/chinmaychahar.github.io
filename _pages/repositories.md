@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /repositories/
-title: open Source
+title: open source
 description: Selected projects, stack, and my recent GitHub activity.
 nav: true
 nav_order: 4
