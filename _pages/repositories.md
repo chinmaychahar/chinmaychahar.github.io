@@ -42,8 +42,6 @@ I build and contribute to open-source tools and SDKs, with work across **CNCF pr
 
 ---
 
-## GitHub Contribution Calendar
-
 <img src="https://ghchart.rshah.org/chinmaychahar" alt="GitHub Contribution Graph" style="max-width:100%;height:auto;" />
 
 ---
