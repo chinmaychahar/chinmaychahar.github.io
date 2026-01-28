@@ -6,9 +6,9 @@ repo_description_lines_max: 2
 github_repos:
   - chinmaychahar/bokeh-3.2
   - chinmaychahar/ReThreads
+  - chinmaychahar/compliance-trestle-demos
   - chinmaychahar/appwrite-sdk-generator
   - chinmaychahar/NOISA
-  - chinmaychahar/SafeWeb
   - chinmaychahar/PyNotion
   - chinmaychahar/SnapSun
   - chinmaychahar/OCR
