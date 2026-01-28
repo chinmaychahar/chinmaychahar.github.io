@@ -9,12 +9,12 @@ last_name: Chahar
 nav_order:
   - title: about
     url: /
-  - title: publications
-    url: /publications/
-  - title: projects
-    url: /projects/
   - title: repositories
     url: /repositories/
+  - title: projects
+    url: /projects/
+  - title: publications
+    url: /publications/
   - title: cv
     url: /cv/
 social:
@@ -67,12 +67,12 @@ navbar_fixed: true
 navbar_content:
   - title: about
     permalink: /
-  - title: publications 
-    permalink: /publications/
-  - title: projects
-    permalink: /projects/
   - title: repositories
     permalink: /repositories/
+  - title: projects
+    permalink: /projects/
+  - title: publications 
+    permalink: /publications/
   - title: cv
     permalink: /cv/
 footer_fixed: true
