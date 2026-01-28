@@ -4,7 +4,7 @@ permalink: /repositories/
 title: open source
 description: Selected projects, stack, and my recent GitHub activity.
 nav: true
-nav_order: 4
+nav_order: 2
 ---
 
 I build and contribute to open-source tools and SDKs, with work across **CNCF projects** and other cloud-native tools  
