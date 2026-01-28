@@ -26,7 +26,11 @@ $max-content-width: {{ site.max_width }};
 
 
 /* GitHub Activity List Styling */
-#gh-activity li {
-  font-size: 0.95rem;
-  color: #444;
+#gh-activity .card {
+  border-radius: 0.5rem;
+  transition: transform 0.2s;
+}
+
+#gh-activity .card:hover {
+  transform: translateY(-2px);
 }
