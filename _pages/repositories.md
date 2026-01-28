@@ -1,15 +1,14 @@
 ---
 layout: page
 permalink: /repositories/
-title: open-source
+title: open source
 description: Selected projects, stack, and my recent GitHub activity.
 nav: true
 nav_order: 4
 ---
 
-## What I Work On
-
-I build and contribute to open-source tools and SDKs, with work across **CNCF projects** and other cloud-native tools (e.g. Dragonfly, OSCAL-Compass, Bokeh, Appwrite etc.), alongside smaller developer utilities and personal projects.
+I build and contribute to open-source tools and SDKs, with work across **CNCF projects** and other cloud-native tools  
+(e.g. Dragonfly, OSCAL-Compass, Bokeh, Appwrite etc.), alongside smaller developer utilities and personal projects.
 
 **Stack:** Python, Java, TypeScript, AWS, Smithy, APIs, CI/CD
 
@@ -17,17 +16,37 @@ I build and contribute to open-source tools and SDKs, with work across **CNCF pr
 
 {% if site.data.repositories.github_users %}
 
-## GitHub users
+## GitHub Users & Profile
 
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+<div class="d-flex flex-wrap gap-4">
+
+  <!-- Existing user stats cards -->
   {% for user in site.data.repositories.github_users %}
     {% include repository/repo_user.liquid username=user %}
   {% endfor %}
+
+  <!-- GitHub Profile Card -->
+  <div id="github-card-container">
+    <div id="github-card"
+         data-username="chinmaychahar"
+         data-max-repos="6"
+         data-sort-by="stars"
+         data-header-text="Top Repositories">
+    </div>
+    <script src="https://piotrl.github.io/github-profile-card/dist/gh-profile-card.min.js"></script>
+  </div>
+
 </div>
+
+{% endif %}
 
 ---
 
-{% endif %}
+## GitHub Contribution Calendar
+
+<img src="https://ghchart.rshah.org/chinmaychahar" alt="GitHub Contribution Graph" style="max-width:100%;height:auto;" />
+
+---
 
 {% if site.data.repositories.github_repos %}
 
@@ -40,33 +59,3 @@ I build and contribute to open-source tools and SDKs, with work across **CNCF pr
 </div>
 
 {% endif %}
-
----
-
-## Recent GitHub Activity
-
-<div id="gh-activity" class="d-flex flex-column gap-2"></div>
-
-<script>
-fetch('https://api.github.com/users/chinmaychahar/events/public?per_page=6')
-  .then(res => res.json())
-  .then(data => {
-    const container = document.getElementById('gh-activity');
-    if (!data || data.message) {
-      container.innerHTML = '<div>Unable to fetch activity — GitHub API rate limit?</div>';
-      return;
-    }
-    data.forEach(e => {
-      const date = new Date(e.created_at).toLocaleDateString();
-      const type = e.type.replace(/Event$/, "");
-      const repo = e.repo.name.split('/')[1] || e.repo.name;
-
-      const card = document.createElement('div');
-      card.className = "card p-2 shadow-sm";
-      card.style.fontSize = "0.95rem";
-      card.style.backgroundColor = "#f8f9fa"; // light card color
-      card.innerHTML = `<strong>${type}</strong> at <em>${repo}</em> — ${date}`;
-      container.appendChild(card);
-    });
-  });
-</script>
