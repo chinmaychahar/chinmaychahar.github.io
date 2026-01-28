@@ -24,7 +24,7 @@ ninja.data = [{
             window.location.href = "/projects/";
           },
         },{id: "nav-open-source",
-          title: "open source",
+          title: "Open Source",
           description: "Selected projects, stack, and my recent GitHub activity.",
           section: "Navigation",
           handler: () => {
