@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /repositories/
-title: open source
+title: Open Source
 description: Selected projects, stack, and my recent GitHub activity.
 nav: true
 nav_order: 4
@@ -16,22 +16,20 @@ I build and contribute to open-source tools and SDKs, with work across **CNCF pr
 
 {% if site.data.repositories.github_users %}
 
-## Stats
+## GitHub Users & Profile
 
-<div class="d-flex flex-wrap gap-4">
+<div class="d-flex flex-wrap align-items-start gap-4">
 
   <!-- Existing user stats cards -->
   {% for user in site.data.repositories.github_users %}
     {% include repository/repo_user.liquid username=user %}
   {% endfor %}
 
-  <!-- GitHub Profile Card -->
+  <!-- GitHub Profile Card (repos hidden) -->
   <div id="github-card-container">
     <div id="github-card"
          data-username="chinmaychahar"
-         data-max-repos="6"
-         data-sort-by="stars"
-         data-header-text="Top Repositories">
+         data-show-repos="false">
     </div>
     <script src="https://piotrl.github.io/github-profile-card/dist/gh-profile-card.min.js"></script>
   </div>
