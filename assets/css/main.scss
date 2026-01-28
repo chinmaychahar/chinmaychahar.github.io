@@ -24,13 +24,22 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-outline.scss"
 ;
 
+/* spacing for top row (user stats + profile card) */
+.d-flex.flex-wrap.gap-4 {
+  gap: 1rem;
+}
 
-/* GitHub Activity List Styling */
-#gh-activity .card {
-  border-radius: 0.5rem;
+/* GitHub Profile Card width */
+#github-card-container {
+  min-width: 280px;
+  max-width: 400px;
+}
+
+/* Optional hover lift for profile card */
+#github-card .gh-profile-card {
   transition: transform 0.2s;
 }
 
-#gh-activity .card:hover {
+#github-card .gh-profile-card:hover {
   transform: translateY(-2px);
 }
