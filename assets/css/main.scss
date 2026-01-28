@@ -25,17 +25,18 @@ $max-content-width: {{ site.max_width }};
 ;
 
 /* spacing for top row (user stats + profile card) */
-.d-flex.flex-wrap.gap-4 {
-  gap: 1rem;
+.d-flex.flex-wrap.align-items-start.gap-4 {
+  align-items: flex-start; 
+  gap: 1rem;            
 }
 
-/* GitHub Profile Card width */
+/* Profile card width */
 #github-card-container {
   min-width: 280px;
-  max-width: 400px;
+  max-width: 350px;
 }
 
-/* Optional hover lift for profile card */
+/* Optional: subtle hover lift for profile card */
 #github-card .gh-profile-card {
   transition: transform 0.2s;
 }
