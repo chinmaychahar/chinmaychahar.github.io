@@ -16,7 +16,7 @@ I build and contribute to open-source tools and SDKs, with work across **CNCF pr
 
 {% if site.data.repositories.github_users %}
 
-## GitHub Users & Profile
+## Stats
 
 <div class="d-flex flex-wrap gap-4">
 
