@@ -23,3 +23,10 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-filled.scss",
   "tabler-icons/tabler-icons-outline.scss"
 ;
+
+
+/* GitHub Activity List Styling */
+#gh-activity li {
+  font-size: 0.95rem;
+  color: #444;
+}
