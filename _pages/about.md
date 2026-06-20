@@ -10,11 +10,11 @@ profile:
   image_circular: false # crops the image to make it circular
 
 selected_papers: false # removing papers from front page
-social: true # keeping social icons 
+social: true # keeping social icons
 
 announcements:
   enabled: false # removing announcements/news
-  
+
 latest_posts:
   enabled: false # removing blog posts
 ---
