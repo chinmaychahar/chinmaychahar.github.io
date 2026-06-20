@@ -4,11 +4,11 @@ github_users:
 repo_description_lines_max: 2
 
 github_repos:
-  - chinmaychahar/bokeh-3.2
+  - chinmaychahar/aws-opentelemetry-rust-contrib
+  - chinmaychahar/meshery
+  - chinmaychahar/MaterialX
+  - chinmaychahar/perses
   - chinmaychahar/ReThreads
-  - chinmaychahar/compliance-trestle-demos
-  - chinmaychahar/appwrite-sdk-generator
   - chinmaychahar/NOISA
-  - chinmaychahar/PyNotion
   - chinmaychahar/SnapSun
-  - chinmaychahar/OCR
+  - chinmaychahar/PyNotion

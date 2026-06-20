@@ -7,10 +7,12 @@ nav: true
 nav_order: 2
 ---
 
-I build and contribute to open-source tools and SDKs, with work across **CNCF projects** and other cloud-native tools  
-(e.g. Dragonfly, OSCAL-Compass, Bokeh, Appwrite etc.), alongside smaller developer utilities and personal projects.
+I build and contribute to open-source tools and SDKs, primarily across **CNCF** and **AcademySoftwareFoundation** projects  
+(e.g. OpenTelemetry, Meshery, MaterialX, Dragonfly, Perses etc.), alongside smaller developer utilities and personal projects.
 
-**Stack:** Python, Java, TypeScript, AWS, Smithy, APIs, CI/CD
+**Stack:** Python, Rust, C++, TypeScript, Java
+
+Currently helping maintain the [`opentelemetry-aws`](https://github.com/open-telemetry/opentelemetry-rust-contrib/tree/main/opentelemetry-aws) Rust crate in the [OpenTelemetry Rust Contrib](https://github.com/open-telemetry/opentelemetry-rust-contrib) repo (CNCF) - reviewing PRs, triaging issues, and keeping it compatible with upstream releases.
 
 ---
 
