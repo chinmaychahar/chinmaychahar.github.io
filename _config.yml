@@ -206,6 +206,7 @@ exclude:
   - _pages/teaching.md
   - _pages/profiles.md
   - _pages/dropdown.md
+  - _pages/projects.md # merged into the "open source" page (_pages/repositories.md)
   - _pages/cv.md # later
   - CUSTOMIZE.md
   - Dockerfile

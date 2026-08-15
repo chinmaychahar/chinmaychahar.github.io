@@ -1,99 +1,40 @@
 # Data for the "open source" page (_pages/repositories.md).
-# Two curated lists rendered as cards by _includes/repository/contrib_card.liquid.
 
 github_username: chinmaychahar
 
-# Major open-source projects I contribute to. `repo` is the UPSTREAM repo
-# (used for the GitHub link and the live star count), not my fork.
-featured_contributions:
-  - name: OpenTelemetry
-    repo: open-telemetry/opentelemetry-rust-contrib
-    tag: CNCF
-    role: Maintainer · opentelemetry-aws
-    description: >
-      Maintain the <code>opentelemetry-aws</code> Rust crate — reviewing PRs, triaging issues,
-      and keeping it compatible with upstream releases. Took over crate ownership and resolved
-      dependency-advisory (cargo-deny) failures.
-    show_stars: true
-    cta_label: View my PRs
-    cta_url: https://github.com/open-telemetry/opentelemetry-rust-contrib/pulls?q=author%3Achinmaychahar
+# Highlighted maintainer role — rendered as the hero card at the top.
+maintainer:
+  logo: assets/img/opentelemetry.svg
+  role: Maintainer · Member
+  title: OpenTelemetry
+  org: CNCF
+  blurb: >
+    Owner and maintainer of the <code>opentelemetry-aws</code> crate — the Rust
+    exporters and propagators for AWS, part of the CNCF OpenTelemetry project.
+  crate: opentelemetry-aws
+  crate_url: https://crates.io/crates/opentelemetry-aws
+  prs_url: https://github.com/open-telemetry/opentelemetry-rust-contrib/pulls?q=author%3Achinmaychahar
+  org_url: https://github.com/open-telemetry
 
+# Merged-PR contributions to other projects — rendered as a compact list.
+contributions:
   - name: MaterialX
+    org: ASWF
     repo: AcademySoftwareFoundation/MaterialX
-    tag: ASWF
-    role: Contributor
-    description: >
-      Proposed and implemented the <code>maxcomponent</code> and <code>mincomponent</code>
-      shader nodes, now used by the glTF PBR and OpenPBR surface shaders.
-    show_stars: true
-    cta_label: View my PRs
-    cta_url: https://github.com/AcademySoftwareFoundation/MaterialX/pulls?q=author%3Achinmaychahar
-
-  - name: OSCAL Compass
-    repo: oscal-compass/compliance-trestle-demos
-    tag: CNCF
-    role: Contributor
-    description: >
-      Aligned the CI Python version matrix (3.9–3.12) with the core compliance-trestle
-      project — compliance-as-code tooling built on the NIST OSCAL standard.
-    show_stars: true
-    cta_label: View my PRs
-    cta_url: https://github.com/oscal-compass/compliance-trestle-demos/pulls?q=author%3Achinmaychahar
+    what: >
+      Designed and implemented the <code>maxcomponent</code> / <code>mincomponent</code>
+      shader nodes — spec proposal, implementation, and adoption in the glTF PBR and
+      OpenPBR surface shaders.
+    prs_url: https://github.com/AcademySoftwareFoundation/MaterialX/pulls?q=author%3Achinmaychahar
 
   - name: Perses
+    org: CNCF
     repo: perses/perses
-    tag: CNCF
-    role: Contributor
-    description: >
-      Authored the Getting Started documentation to help new users onboard to the
-      dashboards-as-code project.
-    show_stars: true
-    cta_label: View my PRs
-    cta_url: https://github.com/perses/perses/pulls?q=author%3Achinmaychahar
+    what: Authored the Getting Started documentation for the dashboards-as-code project.
+    prs_url: https://github.com/perses/perses/pulls?q=author%3Achinmaychahar
 
-# My own repositories.
-personal_projects:
-  - name: ReThreads
-    repo: chinmaychahar/ReThreads
-    tag: JavaScript
-    description: >
-      Platform for upcycling donated clothes into adaptive wear.
-      First runners-up at the NetApp Women Innovathon 2023.
-    cta_label: View repo
-    cta_url: https://github.com/chinmaychahar/ReThreads
-
-  - name: SafeWeb
-    repo: chinmaychahar/SafeWeb
-    tag: JavaScript
-    description: >
-      Browser extension that nudges healthy screen habits with the
-      20-20-20 rule to reduce eye strain.
-    cta_label: View repo
-    cta_url: https://github.com/chinmaychahar/SafeWeb
-
-  - name: NOISA
-    repo: chinmaychahar/NOISA
-    tag: JavaScript
-    description: >
-      Browser extension that tames intrusive site animations for people with
-      photosensitive epilepsy and vestibular disorders.
-    cta_label: View repo
-    cta_url: https://github.com/chinmaychahar/NOISA
-
-  - name: IMReader
-    repo: chinmaychahar/OCR
-    tag: JavaScript
-    description: >
-      OCR and text-to-speech tool that makes image documents easy to read
-      and listen to, built with Tesseract.js.
-    cta_label: View repo
-    cta_url: https://github.com/chinmaychahar/OCR
-
-  - name: SnapSun
-    repo: chinmaychahar/snapsun
-    tag: Python
-    description: >
-      Hackathon project that generates timelapse videos of the sun for any
-      given day, built in Python.
-    cta_label: View repo
-    cta_url: https://github.com/chinmaychahar/snapsun
+  - name: OSCAL Compass
+    org: CNCF
+    repo: oscal-compass/compliance-trestle-demos
+    what: Aligned the demo CI Python versions with compliance-trestle (3.9–3.12).
+    prs_url: https://github.com/oscal-compass/compliance-trestle-demos/pulls?q=author%3Achinmaychahar
