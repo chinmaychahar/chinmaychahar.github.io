@@ -8,7 +8,7 @@ nav_order: 2
 ---
 
 I build and contribute to open-source tools and SDKs, primarily across **CNCF** and **AcademySoftwareFoundation** projects
-(e.g. OpenTelemetry, Meshery, MaterialX, Dragonfly, Perses etc.), alongside smaller developer utilities and personal projects.
+(e.g. OpenTelemetry, MaterialX, OSCAL Compass, Dragonfly, Perses etc.), alongside smaller developer utilities and personal projects.
 
 **Stack:** Python, Rust, C++, TypeScript, Java
 
@@ -16,14 +16,6 @@ I build and contribute to open-source tools and SDKs, primarily across **CNCF** 
 
 <div class="contrib-grid">
   {% for item in site.data.repositories.featured_contributions %}
-    {% include repository/contrib_card.liquid item=item %}
-  {% endfor %}
-</div>
-
-<h2 class="os-heading">My projects</h2>
-
-<div class="contrib-grid">
-  {% for item in site.data.repositories.personal_projects %}
     {% include repository/contrib_card.liquid item=item %}
   {% endfor %}
 </div>
@@ -39,5 +31,7 @@ I build and contribute to open-source tools and SDKs, primarily across **CNCF** 
 </div>
 
 <p class="os-more">
-  <a href="https://github.com/{{ site.data.repositories.github_username }}" target="_blank" rel="external nofollow noopener">See more on GitHub &rarr;</a>
+  My own projects live on the <a href="{{ '/projects/' | relative_url }}">projects page</a> &rarr;
+  &nbsp;·&nbsp;
+  <a href="https://github.com/{{ site.data.repositories.github_username }}" target="_blank" rel="external nofollow noopener">More on GitHub &rarr;</a>
 </p>

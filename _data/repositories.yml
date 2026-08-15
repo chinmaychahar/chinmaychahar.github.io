@@ -12,8 +12,8 @@ featured_contributions:
     role: Maintainer · opentelemetry-aws
     description: >
       Maintain the <code>opentelemetry-aws</code> Rust crate — reviewing PRs, triaging issues,
-      and keeping it compatible with upstream releases. Added configurable X-Ray propagator
-      sampling behavior and CI hardening (cargo-deny, semver checks).
+      and keeping it compatible with upstream releases. Took over crate ownership and resolved
+      dependency-advisory (cargo-deny) failures.
     show_stars: true
     cta_label: View my PRs
     cta_url: https://github.com/open-telemetry/opentelemetry-rust-contrib/pulls?q=author%3Achinmaychahar
@@ -29,16 +29,16 @@ featured_contributions:
     cta_label: View my PRs
     cta_url: https://github.com/AcademySoftwareFoundation/MaterialX/pulls?q=author%3Achinmaychahar
 
-  - name: Meshery
-    repo: meshery/meshery
+  - name: OSCAL Compass
+    repo: oscal-compass/compliance-trestle-demos
     tag: CNCF
     role: Contributor
     description: >
-      Fixed broken intra-page navigation on the Models catalog page of the
-      cloud-native management plane.
+      Aligned the CI Python version matrix (3.9–3.12) with the core compliance-trestle
+      project — compliance-as-code tooling built on the NIST OSCAL standard.
     show_stars: true
     cta_label: View my PRs
-    cta_url: https://github.com/meshery/meshery/pulls?q=author%3Achinmaychahar
+    cta_url: https://github.com/oscal-compass/compliance-trestle-demos/pulls?q=author%3Achinmaychahar
 
   - name: Perses
     repo: perses/perses
