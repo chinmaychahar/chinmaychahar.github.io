@@ -427,6 +427,21 @@ ninja.data = [{
           description: "Python tool for creating timelapse videos of the sun.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_snapsun/";
+            },},{id: "projects-later-me",
+          title: 'later.me',
+          description: "Write sealed letters to your future self, delivered by email on a date you choose.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/6_later/";
+            },},{id: "projects-spark",
+          title: 'Spark',
+          description: "A daily puzzle about where inventions come from. Group the tiles back to their roots.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/7_spark/";
+            },},{id: "projects-true-crime",
+          title: 'True Crime',
+          description: "A conflation of true-crime resources and recommendations. Not morbid, just curious.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/8_truecrime/";
             },},{
         id: 'social-email',
         title: 'email',
