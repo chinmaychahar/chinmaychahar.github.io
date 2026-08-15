@@ -439,7 +439,7 @@ ninja.data = [{
               window.location.href = "/projects/7_spark/";
             },},{id: "projects-true-crime",
           title: 'True Crime',
-          description: "A conflation of true-crime resources and recommendations. Not morbid, just curious.",
+          description: "A collection of true-crime resources and recommendations. Not morbid, just curious.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/8_truecrime/";
             },},{
