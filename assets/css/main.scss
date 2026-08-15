@@ -28,12 +28,18 @@ $max-content-width: {{ site.max_width }};
    Open source page (_pages/repositories.md)
    ========================================================================== */
 
-.os-heading {
+.os-heading,
+.projects h2.category,
+.publications h2.bibliography {
   margin-top: 2.5rem;
   margin-bottom: 1.25rem;
+  padding-top: 0;
   padding-bottom: 0.4rem;
   font-size: 1.35rem;
   font-weight: 500;
+  text-align: left;
+  color: var(--global-text-color);
+  border-top: none;
   border-bottom: 1px solid var(--global-divider-color);
 }
 
@@ -155,4 +161,70 @@ $max-content-width: {{ site.max_width }};
 .os-more {
   margin-top: 1.25rem;
   font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   Projects page — match the open source card style (images kept)
+   ========================================================================== */
+
+.projects {
+  .card {
+    height: 100%;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 8px;
+    overflow: hidden; /* clip the thumbnail corners to the radius */
+    transition:
+      transform 0.2s ease,
+      border-color 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  a:hover .card,
+  .card:hover {
+    transform: translateY(-3px);
+    border-color: var(--global-theme-color);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  }
+}
+
+/* ==========================================================================
+   Publications page — match the open source card style
+   ========================================================================== */
+
+.publications {
+  ol.bibliography li {
+    padding: 1.1rem 1.25rem;
+    margin-bottom: 1rem;
+    background-color: var(--global-card-bg-color);
+    border: 1px solid var(--global-divider-color);
+    border-radius: 8px;
+    transition:
+      transform 0.2s ease,
+      border-color 0.2s ease,
+      box-shadow 0.2s ease;
+
+    &:hover {
+      transform: translateY(-3px);
+      border-color: var(--global-theme-color);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    }
+
+    /* venue badge -> outline pill, matching .contrib-tag */
+    .abbr abbr {
+      display: inline-block;
+      padding: 0.1rem 0.6rem;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      background-color: transparent !important;
+      color: var(--global-theme-color) !important;
+      border: 1px solid var(--global-theme-color);
+      border-radius: 999px;
+
+      a {
+        color: var(--global-theme-color);
+      }
+    }
+  }
 }
