@@ -42,62 +42,7 @@ $max-content-width: {{ site.max_width }};
   border-bottom: 1px solid var(--global-divider-color);
 }
 
-/* Project category = subtle sub-label under the "Projects" heading */
-.projects .category {
-  margin: 1.5rem 0 1rem;
-  padding: 0;
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  text-align: left;
-  color: var(--global-text-color-light);
-  border: none;
-}
-
-.contrib-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1rem;
-}
-
-.contrib-card {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  padding: 1.1rem 1.25rem;
-  background-color: var(--global-card-bg-color);
-  border: 1px solid var(--global-divider-color);
-  border-radius: 8px;
-  transition:
-    transform 0.2s ease,
-    border-color 0.2s ease,
-    box-shadow 0.2s ease;
-}
-
-.contrib-card:hover {
-  transform: translateY(-3px);
-  border-color: var(--global-theme-color);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
-}
-
-.contrib-card-head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.5rem;
-}
-
-.contrib-card-title {
-  font-size: 1.15rem;
-  font-weight: 600;
-  color: var(--global-text-color);
-}
-
-.contrib-card-title:hover {
-  color: var(--global-theme-color);
-}
-
+/* Small outline pill (org tag) */
 .contrib-tag {
   flex-shrink: 0;
   padding: 0.1rem 0.55rem;
@@ -108,71 +53,6 @@ $max-content-width: {{ site.max_width }};
   color: var(--global-theme-color);
   border: 1px solid var(--global-theme-color);
   border-radius: 999px;
-}
-
-.contrib-role {
-  margin-top: 0.15rem;
-  font-size: 0.85rem;
-  color: var(--global-theme-color);
-}
-
-.contrib-desc {
-  margin-top: 0.6rem;
-  margin-bottom: 0.9rem;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  color: var(--global-text-color-light);
-
-  code {
-    color: var(--global-theme-color);
-  }
-}
-
-.contrib-card-foot {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.5rem;
-  margin-top: auto;
-  padding-top: 0.4rem;
-}
-
-.contrib-stars {
-  height: 20px;
-}
-
-.contrib-repo {
-  font-size: 0.78rem;
-  font-family: var(--bs-font-monospace, monospace);
-  color: var(--global-text-color-light);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.contrib-cta {
-  flex-shrink: 0;
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: var(--global-theme-color);
-}
-
-.contrib-panel {
-  padding: 1.25rem;
-  background-color: var(--global-card-bg-color);
-  border: 1px solid var(--global-divider-color);
-  border-radius: 8px;
-  text-align: center;
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-}
-
-.os-more {
-  margin-top: 1.25rem;
-  font-size: 0.9rem;
 }
 
 /* Maintainer hero highlight */
@@ -210,7 +90,7 @@ $max-content-width: {{ site.max_width }};
 .os-hero-title {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: 0.7rem;
   margin-top: 0.1rem;
   font-size: 1.25rem;
   font-weight: 600;
@@ -252,71 +132,36 @@ $max-content-width: {{ site.max_width }};
   }
 }
 
-/* Compact contributions list */
-.contrib-list {
-  display: flex;
-  flex-direction: column;
-}
-
-.contrib-row {
-  display: grid;
-  grid-template-columns: max-content 1fr max-content;
-  gap: 0.4rem 1.25rem;
-  align-items: baseline;
-  padding: 0.85rem 0;
-  border-bottom: 1px solid var(--global-divider-color);
-
-  &:last-child {
-    border-bottom: none;
-  }
-}
-
-.contrib-lead {
-  display: inline-flex;
-  align-items: baseline;
-  gap: 0.5rem;
-  white-space: nowrap;
-}
-
-.contrib-name {
-  font-weight: 600;
-  color: var(--global-text-color);
-
-  &:hover {
-    color: var(--global-theme-color);
-  }
-}
-
-.contrib-what {
-  font-size: 0.9rem;
-  line-height: 1.45;
+/* Projects they've contributed to — simple linked comma list */
+.os-contributions {
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
   color: var(--global-text-color-light);
 
-  code {
+  a {
     color: var(--global-theme-color);
-  }
-}
-
-.contrib-arrow {
-  flex: 0 0 auto;
-  font-size: 0.85rem;
-  font-weight: 500;
-  white-space: nowrap;
-  color: var(--global-theme-color);
-}
-
-@media (max-width: 700px) {
-  .contrib-row {
-    grid-template-columns: 1fr;
-    gap: 0.3rem;
   }
 }
 
 /* ==========================================================================
-   Projects page — match the open source card style (images kept)
+   Projects — cards match the open source card style (images kept)
    ========================================================================== */
 
 .projects {
+  /* Category = subtle sub-label under the "Projects" heading */
+  .category {
+    margin: 1.5rem 0 1rem;
+    padding: 0;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: left;
+    color: var(--global-text-color-light);
+    border: none;
+  }
+
   .card {
     height: 100%;
     border: 1px solid var(--global-divider-color);

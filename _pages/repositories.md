@@ -9,14 +9,12 @@ display_categories: [accessibility, tools]
 horizontal: false
 ---
 
-I build and contribute to open-source tools and SDKs across **CNCF** and **AcademySoftwareFoundation** projects, alongside smaller developer utilities and personal projects.
-
-**Stack:** Python, Rust, C++, TypeScript, Java
+I build and contribute to open-source tools and SDKs across **CNCF** and **AcademySoftwareFoundation** projects, alongside smaller developer utilities and [personal projects](#projects).
 
 {% assign m = site.data.repositories.maintainer %}
 
 <div class="os-hero">
-  <img class="os-hero-logo" src="{{ m.logo | relative_url }}" alt="OpenTelemetry logo" loading="lazy" />
+  <img class="os-hero-logo" src="{{ m.logo | relative_url }}" alt="OpenTelemetry logo" width="56" height="56" loading="lazy" />
   <div class="os-hero-body">
     <div class="os-hero-eyebrow">{{ m.role }}</div>
     <div class="os-hero-title">{{ m.title }}<span class="contrib-tag">{{ m.org }}</span></div>
@@ -28,24 +26,17 @@ I build and contribute to open-source tools and SDKs across **CNCF** and **Acade
         alt="{{ m.crate }} downloads on crates.io"
         loading="lazy"
       />
-      <a href="{{ m.crate_url }}" target="_blank" rel="external nofollow noopener">Crate &rarr;</a>
-      <a href="{{ m.prs_url }}" target="_blank" rel="external nofollow noopener">My PRs &rarr;</a>
-      <a href="{{ m.org_url }}" target="_blank" rel="external nofollow noopener">@open-telemetry &rarr;</a>
+      <a href="{{ m.cta_url }}" target="_blank" rel="external nofollow noopener">{{ m.cta_label }} &rarr;</a>
     </div>
   </div>
 </div>
 
-<h2 class="os-heading">Open source contributions</h2>
+<p class="os-contributions">
+  Also contributed to
+  {% for c in site.data.repositories.contributions %}<a href="{{ c.url }}" target="_blank" rel="external nofollow noopener">{{ c.name }}</a>{% unless forloop.last %}{% if forloop.rindex == 2 %}, and {% else %}, {% endif %}{% endunless %}{% endfor %}.
+</p>
 
-<div class="contrib-list">
-  {% for c in site.data.repositories.contributions %}
-    {% include repository/contribution_row.liquid item=c %}
-  {% endfor %}
-</div>
-
-<p class="os-more">Also active across 50+ repositories — <a href="https://github.com/{{ site.data.repositories.github_username }}" target="_blank" rel="external nofollow noopener">see my GitHub &rarr;</a></p>
-
-<h2 class="os-heading">Projects</h2>
+<h2 class="os-heading" id="projects">Projects</h2>
 
 <div class="projects">
   {% for category in page.display_categories %}
@@ -57,14 +48,4 @@ I build and contribute to open-source tools and SDKs across **CNCF** and **Acade
       {% endfor %}
     </div>
   {% endfor %}
-</div>
-
-<h2 class="os-heading">Contribution activity</h2>
-
-<div class="contrib-panel">
-  <img
-    src="https://ghchart.rshah.org/2698ba/{{ site.data.repositories.github_username }}"
-    alt="{{ site.data.repositories.github_username }}'s GitHub contribution graph"
-    loading="lazy"
-  />
 </div>

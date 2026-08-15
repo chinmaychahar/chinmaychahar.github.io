@@ -9,32 +9,22 @@ maintainer:
   title: OpenTelemetry
   org: CNCF
   blurb: >
-    Owner and maintainer of the <code>opentelemetry-aws</code> crate — the Rust
-    exporters and propagators for AWS, part of the CNCF OpenTelemetry project.
+    Owner and maintainer of the <code>opentelemetry-aws</code> crate, the Rust
+    exporters and propagators for AWS in the CNCF OpenTelemetry project.
   crate: opentelemetry-aws
-  crate_url: https://crates.io/crates/opentelemetry-aws
-  prs_url: https://github.com/open-telemetry/opentelemetry-rust-contrib/pulls?q=author%3Achinmaychahar
-  org_url: https://github.com/open-telemetry
+  cta_label: Check it out
+  cta_url: https://crates.io/crates/opentelemetry-aws
 
-# Merged-PR contributions to other projects — rendered as a compact list.
+# Other projects I've contributed to — rendered as a simple linked list.
 contributions:
-  - name: MaterialX
-    org: ASWF
-    repo: AcademySoftwareFoundation/MaterialX
-    what: >
-      Designed and implemented the <code>maxcomponent</code> / <code>mincomponent</code>
-      shader nodes — spec proposal, implementation, and adoption in the glTF PBR and
-      OpenPBR surface shaders.
-    prs_url: https://github.com/AcademySoftwareFoundation/MaterialX/pulls?q=author%3Achinmaychahar
-
-  - name: Perses
-    org: CNCF
-    repo: perses/perses
-    what: Authored the Getting Started documentation for the dashboards-as-code project.
-    prs_url: https://github.com/perses/perses/pulls?q=author%3Achinmaychahar
-
-  - name: OSCAL Compass
-    org: CNCF
-    repo: oscal-compass/compliance-trestle-demos
-    what: Aligned the demo CI Python versions with compliance-trestle (3.9–3.12).
-    prs_url: https://github.com/oscal-compass/compliance-trestle-demos/pulls?q=author%3Achinmaychahar
+  - { name: Bokeh, url: https://github.com/bokeh/bokeh }
+  - { name: MaterialX, url: https://github.com/AcademySoftwareFoundation/MaterialX }
+  - { name: Jaeger, url: https://github.com/jaegertracing/jaeger-ui }
+  - { name: Dragonfly, url: https://github.com/dragonflyoss/dragonfly-sdk }
+  - { name: Kubernetes Gateway API, url: https://github.com/kubernetes-sigs/gateway-api }
+  - { name: Perses, url: https://github.com/perses/perses }
+  - { name: OSCAL Compass, url: https://github.com/oscal-compass/compliance-trestle-demos }
+  - { name: etcd, url: https://github.com/etcd-io/website }
+  - { name: Meshery, url: https://github.com/meshery/meshery }
+  - { name: Appwrite, url: https://github.com/appwrite/sdk-generator }
+  - { name: Imath, url: https://github.com/AcademySoftwareFoundation/Imath }
