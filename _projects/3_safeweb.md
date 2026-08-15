@@ -11,12 +11,14 @@ github: https://github.com/chinmaychahar/SafeWeb
 SafeWeb helps users build healthy computer habits by following the 20-20-20 rule, preventing computer vision syndrome and promoting eye health.
 
 ### Features
+
 - 20-minute interval reminders
 - Customizable settings
 - User-friendly interface
 - Break time tracking
 
 ### Tech Stack
+
 - JavaScript
 - Chrome Extension API
 

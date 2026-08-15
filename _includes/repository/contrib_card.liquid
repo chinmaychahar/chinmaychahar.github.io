@@ -3,10 +3,14 @@
 <div class="contrib-card">
   <div class="contrib-card-head">
     <a class="contrib-card-title" href="https://github.com/{{ item.repo }}" target="_blank" rel="external nofollow noopener">{{ item.name }}</a>
-    {% if item.tag %}<span class="contrib-tag">{{ item.tag }}</span>{% endif %}
+    {% if item.tag -%}
+      <span class="contrib-tag">{{ item.tag }}</span>
+    {%- endif %}
   </div>
 
-  {% if item.role %}<div class="contrib-role">{{ item.role }}</div>{% endif %}
+  {% if item.role %}
+    <div class="contrib-role">{{ item.role }}</div>
+  {% endif %}
 
   <p class="contrib-desc">{{ item.description }}</p>
 
