@@ -11,17 +11,10 @@ ninja.data = [{
     },
   },{id: "nav-open-source",
           title: "open source",
-          description: "Selected projects, stack, and my recent GitHub activity.",
+          description: "What I build and maintain in the open.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/repositories/";
-          },
-        },{id: "nav-projects",
-          title: "projects",
-          description: "A collection of hackathon projects and fun experiments.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/projects/";
           },
         },{id: "nav-publications",
           title: "publications",
