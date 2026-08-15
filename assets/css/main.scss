@@ -132,6 +132,19 @@ $max-content-width: {{ site.max_width }};
   }
 }
 
+/* Back link on project detail pages */
+.project-back {
+  display: inline-block;
+  margin-bottom: 1.25rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--global-theme-color);
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
 /* Projects they've contributed to — simple linked comma list */
 .os-contributions {
   margin-top: 1.5rem;

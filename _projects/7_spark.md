@@ -10,6 +10,8 @@ github: https://github.com/chinmaychahar/spark
 
 A daily browser puzzle about the origins of inventions. Sixteen tiles hide four origin discoveries; group each tile back to the root that made it possible.
 
+**[Play it live](https://spark-psi-eight.vercel.app/)**
+
 ### Features
 
 - A fresh board every day
