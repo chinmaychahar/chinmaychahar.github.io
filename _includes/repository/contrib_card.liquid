@@ -1,0 +1,26 @@
+{% assign item = include.item %}
+
+<div class="contrib-card">
+  <div class="contrib-card-head">
+    <a class="contrib-card-title" href="https://github.com/{{ item.repo }}" target="_blank" rel="external nofollow noopener">{{ item.name }}</a>
+    {% if item.tag %}<span class="contrib-tag">{{ item.tag }}</span>{% endif %}
+  </div>
+
+  {% if item.role %}<div class="contrib-role">{{ item.role }}</div>{% endif %}
+
+  <p class="contrib-desc">{{ item.description }}</p>
+
+  <div class="contrib-card-foot">
+    {% if item.show_stars %}
+      <img
+        class="contrib-stars"
+        loading="lazy"
+        alt="{{ item.repo }} stars"
+        src="https://img.shields.io/github/stars/{{ item.repo }}?style=flat&label=%E2%98%85&labelColor=30363d&color=2698ba"
+      >
+    {% else %}
+      <span class="contrib-repo">{{ item.repo }}</span>
+    {% endif %}
+    <a class="contrib-cta" href="{{ item.cta_url }}" target="_blank" rel="external nofollow noopener">{{ item.cta_label }} &rarr;</a>
+  </div>
+</div>
