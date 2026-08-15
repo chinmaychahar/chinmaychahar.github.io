@@ -6,17 +6,6 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Chinmay
 middle_name:
 last_name: Chahar
-nav_order:
-  - title: about
-    url: /
-  - title: repositories
-    url: /repositories/
-  - title: projects
-    url: /projects/
-  - title: publications
-    url: /publications/
-  - title: cv
-    url: /cv/
 social:
   email: chinmaychahar@gmail.com
   github: chinmaychahar
@@ -25,14 +14,14 @@ social:
 # contact_note: >
 #  You can even add a little note about which of these is the best way to reach you.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Personal site of Chinmay Chahar, a Software Development Engineer at Amazon and OpenTelemetry maintainer who contributes to CNCF and Academy Software Foundation open-source projects.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 #  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 # keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: 🌻 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: 🔭 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://chinmaychahar.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -64,17 +53,6 @@ enable_darkmode: true
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-navbar_content:
-  - title: about
-    permalink: /
-  - title: repositories
-    permalink: /repositories/
-  - title: projects
-    permalink: /projects/
-  - title: publications
-    permalink: /publications/
-  - title: cv
-    permalink: /cv/
 footer_fixed: true
 search_enabled: false
 socials_in_search: true
@@ -91,9 +69,9 @@ max_width: 930px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
 serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+og_image: https://chinmaychahar.github.io/assets/img/prof_pic.jpg # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -207,6 +185,8 @@ exclude:
   - _pages/profiles.md
   - _pages/dropdown.md
   - _pages/projects.md # merged into the "open source" page (_pages/repositories.md)
+  - _pages/news.md
+  - _pages/books.md
   - _pages/cv.md # later
   - CUSTOMIZE.md
   - Dockerfile
@@ -652,25 +632,3 @@ third_party_libraries:
       css: "https://cdn.jsdelivr.net/npm/venobox@{{version}}/dist/venobox.min.css"
       js: "https://cdn.jsdelivr.net/npm/venobox@{{version}}/dist/venobox.min.js"
     version: "2.1.8"
-
-# -----------------------------------------------------------------------------
-# Get external JSON data
-# -----------------------------------------------------------------------------
-
-jekyll_get_json:
-  - data: resume
-    json: assets/json/resume.json # it can also be an url
-
-jsonresume:
-  - basics
-  - work
-  - education
-  - publications
-  - projects
-  - volunteer
-  - awards
-  - certificates
-  - skills
-  - languages
-  - interests
-  - references
