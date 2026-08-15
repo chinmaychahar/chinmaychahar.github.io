@@ -13,7 +13,7 @@ maintainer:
     exporters and propagators for AWS in the CNCF OpenTelemetry project.
   crate: opentelemetry-aws
   cta_label: Check it out
-  cta_url: https://crates.io/crates/opentelemetry-aws
+  cta_url: https://github.com/open-telemetry/opentelemetry-rust-contrib/tree/main/opentelemetry-aws
 
 # Other projects I've contributed to — rendered as a simple linked list.
 contributions:

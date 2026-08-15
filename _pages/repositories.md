@@ -9,8 +9,6 @@ display_categories: [accessibility, tools]
 horizontal: false
 ---
 
-I build and contribute to open-source tools and SDKs across **CNCF** and **AcademySoftwareFoundation** projects, alongside smaller developer utilities and [personal projects](#projects).
-
 {% assign m = site.data.repositories.maintainer %}
 
 <div class="os-hero">
@@ -32,8 +30,8 @@ I build and contribute to open-source tools and SDKs across **CNCF** and **Acade
 </div>
 
 <p class="os-contributions">
-  Also contributed to
-  {% for c in site.data.repositories.contributions %}<a href="{{ c.url }}" target="_blank" rel="external nofollow noopener">{{ c.name }}</a>{% unless forloop.last %}{% if forloop.rindex == 2 %}, and {% else %}, {% endif %}{% endunless %}{% endfor %}.
+  Always tinkering somewhere - recent stops include
+  {% for c in site.data.repositories.contributions %}<a href="{{ c.url }}" target="_blank" rel="external nofollow noopener">{{ c.name }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}, etc.
 </p>
 
 <h2 class="os-heading" id="projects">Projects</h2>
