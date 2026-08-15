@@ -5,7 +5,7 @@ title: open source
 description: What I build and maintain in the open.
 nav: true
 nav_order: 2
-display_categories: [accessibility, tools]
+display_categories: [accessibility, tools, games/puzzles, misc]
 horizontal: false
 ---
 
